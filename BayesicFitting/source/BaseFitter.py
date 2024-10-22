@@ -334,7 +334,7 @@ class BaseFitter( object ):
         if index is None :
             index = self.fitIndex
 
-        fitpar = numpy.array( fitpar, dtype=float, copy=False, ndmin=1 )
+        fitpar = numpy.array( fitpar, dtype=float, ndmin=1 )
 
         if index is None or len( fitpar ) == len( self.model.parameters ) :
             return fitpar

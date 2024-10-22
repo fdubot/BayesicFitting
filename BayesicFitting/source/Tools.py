@@ -295,7 +295,7 @@ def toArray( x, ndim=1, dtype=None ) :
     """
     if isinstance( x, Table ) :
         return x
-    return numpy.array( x, dtype=dtype, copy=False, ndmin=min( ndim, 2 ) )
+    return numpy.array( x, dtype=dtype, ndmin=min( ndim, 2 ) )
 
 def isList( item, cls ) :
     """
